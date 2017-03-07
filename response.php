@@ -8,7 +8,7 @@
 #
 include "dbConnect.php";
 $query= $_GET["query"];
-echo $query;
+
 switch($query){
     default:
         echo "Nothing selected!";
@@ -30,7 +30,7 @@ switch($query){
         $result->close();
         break;
     case "2010":
-        $q="SELECT * FROM marvelmovies WHERE yearReleased<=2010";
+        $q="SELECT * FROM marvelmovies WHERE yearReleased>=2010";
         $result=$link->query($q);
         while($row = $result->fetch_array()){
             echo $row['title']."</br>";

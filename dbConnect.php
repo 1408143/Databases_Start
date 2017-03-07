@@ -27,7 +27,5 @@
         exit;
     }
 
-    echo "Connected successfully!";
-
 ?>
 
