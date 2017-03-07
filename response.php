@@ -24,16 +24,25 @@ switch($query){
     case "marvel":
         $q="SELECT * FROM marvelmovies WHERE productionStudio LIKE 'Marvel Studios'";
         $result=$link->query($q);
+        while($row = $result->fetch_array()){
+            echo $row['title']."</br>";
+        }
         $result->close();
         break;
     case "2010":
         $q="SELECT * FROM marvelmovies WHERE yearReleased<=2010";
         $result=$link->query($q);
+        while($row = $result->fetch_array()){
+            echo $row['title']."</br>";
+        }
         $result->close();
         break;
     case "xmen":
         $q="SELECT * FROM marvelmovies WHERE  title LIKE '%X-Men%'";
         $result=$link->query($q);
+        while($row = $result->fetch_array()){
+            echo $row['title']."</br>";
+        }
         $result->close();
         break;
 }
