@@ -17,7 +17,7 @@ switch($query){
         $q="SELECT * FROM marvelmovies";
         $result=$link->query($q);
         while($row = $result->fetch_array()){
-            echo $row('title')."</br>";
+            echo $row['title']."</br>";
         }
         $result->close();
         break;
