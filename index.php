@@ -5,5 +5,7 @@
  * Date: 07/03/2017
  * Time: 14:52
  */
-echo "HELLO";
+include "dbConnect.php";
+
+
 ?>
