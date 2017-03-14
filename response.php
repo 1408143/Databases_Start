@@ -6,7 +6,7 @@
  * Time: 16:13
  */
 #
-include "dbConnect.php";
+/*include "dbConnect.php";
 $query= $_GET["query"];
 
 switch($query){
@@ -46,5 +46,8 @@ switch($query){
         $result->close();
         break;
 }
-$link->close();
+$link->close();*/
+
+$response= $_POST["g-recaptcha-response"];
+echo $response;
 ?>
