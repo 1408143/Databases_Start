@@ -12,11 +12,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <meta charset="UTF-8">
         <title>Links Links Links</title>
     </head>
     <body>
     <header>
+        <button
+            class="g-recaptcha"
+            data-sitekey="6Lc69xgUAAAAAHmVQGaZEuIty4lCiwX-FxeAFTXB"
+            data-callback="YourOnSubmitFn">
+            Submit
+        </button>
         <div id="quicklinks">
             <ul>
                 <li><a href="response.php?query=all">Display All Movies</a></li>
