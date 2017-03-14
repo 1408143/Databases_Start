@@ -50,4 +50,5 @@ $link->close();*/
 
 $response= $_POST["g-recaptcha-response"];
 echo $response;
+echo "plop";
 ?>
