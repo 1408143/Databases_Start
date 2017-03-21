@@ -6,7 +6,7 @@
  * Time: 14:52
  */
 
-
+echo $connectstr_dbpassword;
 
 ?>
 <!--<!DOCTYPE html>

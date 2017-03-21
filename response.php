@@ -50,5 +50,6 @@ $link->close();*/
 
 $response= $_POST["g-recaptcha-response"];
 echo $response;
+echo $connectstr_dbpassword;
 echo "plop";
 ?>
